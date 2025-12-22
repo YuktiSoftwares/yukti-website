@@ -111,3 +111,4 @@ docker rm e6d32e36e242
 
  less /var/log/yukti-start.log
 
+sudo less /var/log/nginx/error.log

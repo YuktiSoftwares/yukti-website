@@ -1,0 +1,52 @@
+1. Install nginx and Certbot (on your server, not in Docker):
+sudo apt update
+sudo apt install -y nginx certbot python3-certbot-nginx
+
+2. Configure nginx as a reverse proxy: Create /etc/nginx/sites-available/yukti with this content:
+server {
+    listen 80;
+    server_name yuktisoftware.com www.yuktisoftware.com;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name yuktisoftware.com www.yuktisoftware.com;
+
+    ssl_certificate /etc/letsencrypt/live/yuktisoftware.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yuktisoftware.com/privkey.pem;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+
+Enable the site:
+sudo ln -sf /etc/nginx/sites-available/yukti /etc/nginx/sites-enabled/yukti
+sudo nginx -t
+sudo systemctl reload nginx
+
+
+4. Obtain a Let’s Encrypt certificate:
+sudo certbot --nginx -d yuktisoftware.com -d www.yuktisoftware.com --non-interactive --agree-tos -m mithu62705@gmail.com
+
+
+5. Open firewall for nginx (if using UFW):
+sudo ufw allow 'Nginx Full'
+sudo ufw reload
+
+6. Verify:
+Visit https://yuktisoftware.com in your browser.
+Summary:
+Spring Boot runs on 127.0.0.1:8080 (inside Docker or directly).
+nginx listens on 80/443, proxies to the app, and handles HTTPS.
+Certbot manages SSL certificates.
+No changes are needed in your Spring Boot code. All HTTPS is handled by nginx.
