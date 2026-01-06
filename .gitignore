@@ -37,6 +37,7 @@ build/
 /src/yukti-website-react-old/
 /src/yukti-website-react/node_modules
 /src/yukti-website-react/build/
+/src/yukti-website-react/node/
 node_modules/
 yukti-website-react-in/
 /.pnp
