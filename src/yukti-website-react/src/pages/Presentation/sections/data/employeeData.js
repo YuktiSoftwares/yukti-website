@@ -21,4 +21,21 @@ export default [
     image: constant.homepage.team.team5.image,
     name: constant.homepage.team.team5.name,
   },
+
+  {
+    image: constant.homepage.team.team6.image,
+    name: constant.homepage.team.team6.name,
+  },
+  {
+    image: constant.homepage.team.team7.image,
+    name: constant.homepage.team.team7.name,
+  },
+  {
+    image: constant.homepage.team.team8.image,
+    name: constant.homepage.team.team8.name,
+  },
+  {
+    image: constant.homepage.team.team9.image,
+    name: constant.homepage.team.team9.name,
+  },
 ];

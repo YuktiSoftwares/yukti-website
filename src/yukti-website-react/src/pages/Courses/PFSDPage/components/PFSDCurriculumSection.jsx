@@ -175,4 +175,21 @@ const curriculumData = [
       "Full Stack Integration",
     ],
   },
+  {
+    moduleTitle: "ReactJS",
+    moduleDescription:
+      "Modern frontend development using ReactJS, focusing on components, state, routing, and API integration.",
+    topics: [
+      "Introduction to ReactJS",
+      "Components",
+      "Rendering",
+      "Hooks",
+      "Routers",
+      "State Management",
+      "CSS & Frameworks",
+      "API Calls",
+      "Forms",
+      "Types & Validation",
+    ],
+  },
 ];

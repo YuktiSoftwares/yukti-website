@@ -175,4 +175,137 @@ const curriculumData = [
       "Full Stack Integration",
     ],
   },
+  {
+    moduleTitle: "React JS Fundamentals",
+    moduleDescription:
+      "Introduction to React ecosystem, core concepts, JSX syntax, and component-based architecture for modern web development.",
+    topics: [
+      "Introduction to ReactJS",
+      "Virtual DOM vs Real DOM",
+      "JSX Syntax and Expressions",
+      "React Components Overview",
+      "Setting Up React Development Environment",
+    ],
+  },
+  {
+    moduleTitle: "Components & Rendering",
+    moduleDescription:
+      "Building reusable components, understanding rendering mechanisms, and managing component lifecycle in React applications.",
+    topics: [
+      "Components",
+      "Functional vs Class Components",
+      "Component Lifecycle Methods",
+      "Conditional Rendering",
+      "Lists and Keys",
+      "Render Props Pattern",
+    ],
+  },
+  {
+    moduleTitle: "Modern React with Hooks",
+    moduleDescription:
+      "Mastering React Hooks for state management, side effects, and building custom hooks for reusable logic.",
+    topics: [
+      "Hooks",
+      "useState and useEffect Hooks",
+      "Custom Hooks Creation",
+      "useContext and useReducer",
+      "Hook Rules and Best Practices",
+      "Performance Optimization with Hooks",
+    ],
+  },
+  {
+    moduleTitle: "Routing & Navigation",
+    moduleDescription:
+      "Implementing client-side routing, navigation patterns, and route management in single-page applications.",
+    topics: [
+      "Routers",
+      "React Router Setup",
+      "Route Configuration",
+      "Programmatic Navigation",
+      "Route Parameters and Query Strings",
+      "Protected Routes and Authentication",
+    ],
+  },
+  {
+    moduleTitle: "State Management Solutions",
+    moduleDescription:
+      "Advanced state management patterns using Context API and external libraries for complex application state.",
+    topics: [
+      "State Management",
+      "Context API Implementation",
+      "useReducer for Complex State",
+      "State Management Libraries Overview",
+      "Global State Patterns",
+      "State Persistence Techniques",
+    ],
+  },
+  {
+    moduleTitle: "Styling & UI Frameworks",
+    moduleDescription:
+      "Modern CSS approaches, UI frameworks, and styling methodologies for building attractive React applications.",
+    topics: [
+      "CSS & Frameworks",
+      "Tailwind CSS Integration",
+      "Material UI Components",
+      "Styled Components",
+      "CSS Modules",
+      "Responsive Design in React",
+    ],
+  },
+  {
+    moduleTitle: "API Integration & Data Fetching",
+    moduleDescription:
+      "HTTP client configuration, API communication patterns, and data fetching strategies in React applications.",
+    topics: [
+      "API Calls",
+      "Axios Configuration",
+      "REST API Integration",
+      "Data Fetching Patterns",
+      "Error Handling for APIs",
+      "Loading States Management",
+    ],
+  },
+  {
+    moduleTitle: "Forms & User Input Handling",
+    moduleDescription:
+      "Form management, user input validation, and form state handling using popular React form libraries.",
+    topics: [
+      "Forms",
+      "React Hook Form Implementation",
+      "Formik Setup and Usage",
+      "Yup Validation Schema",
+      "Form Submission Handling",
+      "Dynamic Form Fields",
+    ],
+  },
+  {
+    moduleTitle: "Type Safety & Production Readiness",
+    moduleDescription:
+      "Adding type safety with TypeScript, performance optimization, and preparing React applications for production.",
+    topics: [
+      "Types & Validation",
+      "TypeScript with React",
+      "Prop Types and Default Props",
+      "Error Boundaries",
+      "Code Splitting and Lazy Loading",
+      "Performance Optimization Techniques",
+    ],
+  },
+  {
+    moduleTitle: "ReactJS",
+    moduleDescription:
+      "Modern frontend development using ReactJS, focusing on components, state, routing, and API integration.",
+    topics: [
+      "Introduction to ReactJS",
+      "Components",
+      "Rendering",
+      "Hooks",
+      "Routers",
+      "State Management",
+      "CSS & Frameworks",
+      "API Calls",
+      "Forms",
+      "Types & Validation",
+    ],
+  },
 ];

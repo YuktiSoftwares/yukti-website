@@ -124,7 +124,7 @@
 							<resources>
 								<resource>
 									<directory>src/yukti-website-react/build</directory>
-									<filtering>true</filtering>
+									<filtering>false</filtering>
 								</resource>
 							</resources>
 						</configuration>

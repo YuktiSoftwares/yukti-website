@@ -68,6 +68,8 @@ import DsaCoursePage from "layouts/pages/courses/dsaCourse";
 import ReactJsCoursePage from "layouts/pages/courses/reactJsCourse";
 import DbmsCoursePage from "layouts/pages/courses/dbmsCourse";
 import SpringSpringBootCoursePage from "layouts/pages/courses/springSpringBootCourse";
+import BlogListPage from "layouts/pages/blogs/blogListPage";
+import YuktiBuilderContributionPage from "layouts/pages/landing-pages/contribution/yuktiBuilder";
 
 // Sections
 // import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -94,7 +96,7 @@ const routes = [
     // name: "pages",
     name: "menu",
     icon: <Icon>dashboard</Icon>,
-    columns: 1,
+    columns: 2,
     rowsPerColumn: 2,
     collapse: [
       {
@@ -123,16 +125,16 @@ const routes = [
           },
         ],
       },
-      // {
-      //   name: "account",
-      //   collapse: [
-      //     {
-      //       name: "sign in",
-      //       route: "/pages/authentication/sign-in",
-      //       component: <SignIn />,
-      //     },
-      //   ],
-      // },
+      {
+        name: "Contributions",
+        collapse: [
+          {
+            name: "RKGIT",
+            route: "/pages/contribution/yuktiBuilder",
+            component: <YuktiBuilderContributionPage />,
+          },
+        ],
+      },
     ],
   },
   {
@@ -166,7 +168,6 @@ const routes = [
           // },
         ],
       },
-
       {
         name: "Courses",
         description: "Explore our courses",
@@ -213,8 +214,8 @@ const routes = [
             component: <AdvJavaCoursePage />,
           },
           {
-            name: "Basic Python",
-            route: "/pages/courses/basicPython",
+            name: "Python",
+            route: "/pages/courses/pythonprog",
             component: <BasicPythonCoursePage />,
           },
           {
@@ -254,6 +255,41 @@ const routes = [
           },
         ],
       },
+
+      {
+        name: "Blogs",
+        description: "Explore our blogs",
+        route: "/pages/blogs",
+        component: <BlogListPage />,
+      },
+      {
+        name: "Who are we",
+        description: "Know more about us",
+        dropdown: true,
+        collapse: [
+          {
+            name: "about us",
+            route: "/pages/landing-pages/about-us",
+            component: <AboutUs />,
+          },
+          {
+            name: "contact us",
+            route: "/pages/landing-pages/contact-us",
+            component: <ContactUs />,
+          },
+          // {
+          //   name: "nav tabs",
+          //   route: "/sections/navigation/nav-tabs",
+          //   component: <NavTabs />,
+          // },
+          // {
+          //   name: "pagination",
+          //   route: "/sections/navigation/pagination",
+          //   component: <Pagination />,
+          // },
+        ],
+      },
+
       // {
       //   name: "input areas",
       //   description: "See all input areas",

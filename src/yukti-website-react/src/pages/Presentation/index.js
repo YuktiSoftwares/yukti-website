@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -34,6 +19,7 @@ import Information from "pages/Presentation/sections/Information";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Download from "pages/Presentation/sections/Download";
+// import Testimonials from "pages/Presentation/sections/Testimonials";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
@@ -47,7 +33,9 @@ import constant from "assets/my_constants/constant";
 // Images
 // import bgImage from "assets/images/bg-presentation.jpg";
 import logo from "assets/images/modify_images/heroImage.png";
+//import logo from "assets/images/homepagebg.png";
 import Employees from "pages/Presentation/sections/Employees";
+// import VideoFeedback from "./sections/VideoFeedback";
 
 function Presentation() {
   return (
@@ -71,8 +59,8 @@ function Presentation() {
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
             `${linearGradient(
-              rgba(gradients.dark.main, 0.9), // Increased opacity for better contrast
-              rgba(gradients.dark.state, 0.8)
+              rgba(gradients.dark.main, 0.6), // Increased opacity for better contrast
+              rgba(gradients.dark.state, 0.6)
             )}, url(${logo})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -190,6 +178,7 @@ function Presentation() {
           </Grid>
         </Container>
         {/* <Testimonials /> */}
+        {/* <VideoFeedback />*/}
         <Employees />
         <Download />
         <MKBox pt={18} pb={6}>

@@ -54,25 +54,44 @@ const EnrollCTASection = ({
         >
           {buttonText}
         </Button>
-
         <Stack direction={{ xs: "column", sm: "row" }} justifyContent="center" spacing={3} mt={3}>
           <Stack direction="row" spacing={1} alignItems="center">
             <PhoneInTalkIcon fontSize="small" />
-            <Typography variant="body2" fontWeight={"bold"}>
+            <Typography
+              variant="body2"
+              fontWeight={"bold"}
+              component="a"
+              href={`tel:${9582815419}`}
+              sx={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
+            >
               {phone}
             </Typography>
           </Stack>
 
           <Stack direction="row" spacing={1} alignItems="center">
             <WhatsAppIcon fontSize="small" />
-            <Typography variant="body2" fontWeight={"bold"}>
+            <Typography
+              variant="body2"
+              fontWeight={"bold"}
+              component="a"
+              href={`https://api.whatsapp.com/send/?phone=919582815419&text&type=phone_number&app_absent=0`}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
+            >
               {whatsapp}
             </Typography>
           </Stack>
 
           <Stack direction="row" spacing={1} alignItems="center">
             <EmailIcon fontSize="small" />
-            <Typography variant="body2" fontWeight={"bold"}>
+            <Typography
+              variant="body2"
+              fontWeight={"bold"}
+              component="a"
+              href={`mailto:${email}`}
+              sx={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
+            >
               {email}
             </Typography>
           </Stack>

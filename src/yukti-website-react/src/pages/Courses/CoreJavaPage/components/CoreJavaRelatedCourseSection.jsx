@@ -35,7 +35,7 @@ const CoreJavaRelatedCourseSection = () => {
 export default CoreJavaRelatedCourseSection;
 const coursesData = [
   { slug: "jfsd", name: "Java Full Stack Development", image: jfsdCoverPage },
-  { slug: "jfsd", name: "Python Full Stack Development", image: pfsdCoverPage },
+  { slug: "pfsd", name: "Python Full Stack Development", image: pfsdCoverPage },
   { slug: "mernsd", name: "MERN Stack Development", image: mernsdCoverPage },
   { slug: "htmlcss", name: "HTML & CSS", image: htmlcssCoverPage },
   { slug: "dataAnalytics", name: "Data Analytics", image: dataAnalyticsCoverPage },

@@ -1,6 +1,6 @@
 import manisha from "assets/images/manisha.png";
 import manishaChair from "assets/images/modify_images/Manisha mam chair.png";
-import yuktisoftware from "assets/images/yuktisoftware.png";
+import yuktisoftware from "assets/images/modify_images/Yukti_Logo.svg";
 import intekhab_image from "assets/images/intekhab_image.png";
 import laptop from "assets/images/laptop.png";
 // import front_bg from "assets/images/front_bg.png";
@@ -28,6 +28,10 @@ import intekhab2 from "assets/images/modify_images/intekhab2.png";
 import nilesh from "assets/images/modify_images/nilesh.png";
 import utkarsh from "assets/images/modify_images/utkarsh.jpg";
 import Mamsfriend from "assets/images/modify_images/Mam's Friend.png";
+import hindSinha from "assets/images/hindSinha.jpg";
+import AyushPathak from "assets/images/AyushPathak.jpg";
+import shubhash from "assets/images/shubhash.jpg";
+import vaibhav from "assets/images/vaibhav.jpg";
 
 import react from "assets/images/modify_images/logos/react.png";
 import mui from "assets/images/modify_images/logos/mui.png";
@@ -440,6 +444,22 @@ export default {
       team5: {
         name: "Vandana Thakur",
         image: Mamsfriend,
+      },
+      team6: {
+        name: "Hind Sinha",
+        image: hindSinha,
+      },
+      team7: {
+        name: "Ayush Pathak",
+        image: AyushPathak,
+      },
+      team8: {
+        name: "Shubhash Sharma",
+        image: shubhash,
+      },
+      team9: {
+        name: "Vaibhav Agrahari",
+        image: vaibhav,
       },
     },
     downloads: {

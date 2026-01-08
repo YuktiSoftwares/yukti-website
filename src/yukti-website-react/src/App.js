@@ -14,8 +14,8 @@ import Presentation from "layouts/pages/presentation";
 // Material Kit 2 React routes
 import routes from "routes";
 import ErrorPage from "layouts/pages/landing-pages/error";
-import SeoUpdate from "pages/SeoUpdate/SeoUpdate";
-
+import BlogDetailsPage from "layouts/pages/blogs/blogDetailsPage";
+// import SeoUpdate from "pages/SeoUpdate/SeoUpdate";
 export default function App() {
   const { pathname } = useLocation();
 
@@ -43,8 +43,10 @@ export default function App() {
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
-        <Route path="/update" element={<SeoUpdate />} />
+        {/* <Route path="/update" element={<SeoUpdate />} /> */}
         <Route path="/" element={<Presentation />} />
+        <Route path="/pages/blogs/:id" element={<BlogDetailsPage />} />
+
         {/* <Route path="/presentation" element={<Presentation />} />
         <Route path="/" element={<Navigate to="/presentation" replace />} /> */}
         <Route path="*" element={<ErrorPage />} />
