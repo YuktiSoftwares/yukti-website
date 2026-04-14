@@ -69,6 +69,7 @@ import ReactJsCoursePage from "layouts/pages/courses/reactJsCourse";
 import DbmsCoursePage from "layouts/pages/courses/dbmsCourse";
 import SpringSpringBootCoursePage from "layouts/pages/courses/springSpringBootCourse";
 import BlogListPage from "layouts/pages/blogs/blogListPage";
+import WorkshopRegistrationPage from "layouts/pages/workshops/workshopRegistration";
 import YuktiBuilderContributionPage from "layouts/pages/landing-pages/contribution/yuktiBuilder";
 
 // Sections
@@ -256,6 +257,12 @@ const routes = [
         ],
       },
 
+      {
+        name: "Workshops",
+        description: "Explore our workshops",
+        route: "/pages/workshops",
+        component: <WorkshopRegistrationPage />,
+      },
       {
         name: "Blogs",
         description: "Explore our blogs",

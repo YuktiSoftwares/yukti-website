@@ -112,3 +112,9 @@ docker rm e6d32e36e242
  less /var/log/yukti-start.log
 
 sudo less /var/log/nginx/error.log
+
+
+====================
+command to upload from local to droplet
+
+scp yukti-website-1.0.1.jar root@your_droplet_ip:/opt/yukti-website/

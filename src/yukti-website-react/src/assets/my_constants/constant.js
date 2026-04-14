@@ -27,7 +27,7 @@ import user from "assets/images/modify_images/yuktiBuilder/users.png";
 import intekhab2 from "assets/images/modify_images/intekhab2.png";
 import nilesh from "assets/images/modify_images/nilesh.png";
 import utkarsh from "assets/images/modify_images/utkarsh.jpg";
-import Mamsfriend from "assets/images/modify_images/Mam's Friend.png";
+import Mamsfriend from "assets/images/modify_images/mams-friend.png";
 import hindSinha from "assets/images/hindSinha.jpg";
 import AyushPathak from "assets/images/AyushPathak.jpg";
 import shubhash from "assets/images/shubhash.jpg";
